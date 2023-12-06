@@ -465,3 +465,71 @@ iface eth0 inet static
 	netmask 255.255.252.0
 	gateway 10.55.4.1
 ```
+
+### Routing CIDR pada GNS3
+
+Berikut merupakan cara melakukan routing CIDR pada GNS3 dengan menggunakan `route add -net <NID subnet> netmask <netmask> gw <IP gateway>`
+
+#### Aura
+```bash
+route add -net 10.31.32.0 netmask 255.255.255.252 gw 10.31.128.1 #A13
+
+route add -net 10.55.128.0 netmask 255.255.255.224 gw 10.31.128.1 #A2
+
+route add -net 10.31.8.0 netmask 255.255.255.252 gw 10.31.128.1 #A11
+
+route add -net 10.31.16.0 netmask 255.255.248.0 gw 10.31.128.1 #A1
+
+route add -net 10.31.0.0 netmask 255.255.252.0 gw 10.31.128.1 #A10
+
+route add -net 10.31.4.4 netmask 255.255.255.252 gw 10.31.128.1 #A12
+
+route add -net 10.31.4.0 netmask 255.255.255.248 gw 10.31.128.1 #A9
+
+
+route add -net 10.39.0.0 netmask 255.255.255.128 gw 10.33.0.2 #A3
+
+
+route add -net 10.59.0.0 netmask 255.255.255.252 gw 10.32.0.2 #A17
+
+route add -net 10.31.64.0 netmask 255.255.255.252 gw 10.32.0.2 #A18
+
+
+
+```
+
+#### Frieren
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.31.128.2
+
+route add -net 10.31.8.0 netmask 255.255.255.252 gw 10.31.32.1
+
+route add -net 10.31.4.4 netmask 255.255.255.252 gw 10.31.32.1
+
+route add -net 10.31.4.0 netmask 255.255.255.248 gw 10.31.32.1
+
+route add -net 10.31.0.0 netmask 255.255.252.0 gw 10.31.32.1
+
+route add -net 10.31.16.0 netmask 255.255.248.0 gw 10.31.32.1
+```
+
+#### Flamme
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.31.32.2
+
+route add -net 10.31.16.0 netmask 255.255.248.0 gw 10.31.8.1
+
+route add -net 10.31.4.0 netmask 0.0.0.0 gw 10.31.4.6
+```
+
+#### Fern
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.31.8.2
+```
+
+#### Himmel
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.31.4.5
+```
+
+
