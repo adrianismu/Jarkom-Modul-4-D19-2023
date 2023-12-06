@@ -22,6 +22,11 @@ Setelah kita membuat vlsm-tree, kita lakukan <i>subnetting</i> pada setiap rute 
 
 #### <i>Routing</i>
 
+Setelah kita melakukan subnetting, selanjutkan kita lakukan routing agar bisa melakukan ping tidak hanya di 1 subnet saja tetapi di semua client atau router sebagai berikut:
+
+![vlsm-routing](./img/vlsm-routing.png)
+
+Jika sudah melakukan semua itu, maka kita bisa lakukan testing dan akan successful
 ## GNS3 CIDR
 
 ### Topologi
