@@ -493,9 +493,6 @@ route add -net 10.39.0.0 netmask 255.255.255.128 gw 10.33.0.2 #A3
 route add -net 10.59.0.0 netmask 255.255.255.252 gw 10.32.0.2 #A17
 
 route add -net 10.31.64.0 netmask 255.255.255.252 gw 10.32.0.2 #A18
-
-
-
 ```
 
 #### Frieren
@@ -530,6 +527,55 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.31.8.2
 #### Himmel
 ```bash
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.31.4.5
+```
+
+#### Denken
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.33.0.1
+```
+
+#### Eisen
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.32.0.1
+
+route add -net 10.57.0.0 netmask 255.255.252.0 gw 10.31.64.2
+
+route add -net 10.56.0.0 netmask 255.255.255.0 gw 10.31.64.2
+
+route add -net 10.55.16.0 netmask 255.255.254.0 gw 10.55.32.2
+
+route add -net 10.55.8.0 netmask 255.255.255.252 gw 10.55.32.2
+
+route add -net 10.55.0.0 netmask 255.255.255.192 gw 10.55.32.2
+
+route add -net 10.55.4.0 netmask 255.255.252.0 gw 10.55.32.2
+```
+
+#### Lugner
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.31.64.1
+```
+
+#### Linie
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.55.32.1
+
+route add -net 10.55.0.0 netmask 255.255.255.192 gw 10.55.8.2
+
+route add -net 10.55.4.0 netmask 255.255.252.0 gw 10.55.8.2
+```
+
+#### Lawine
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.55.8.1
+
+route add -net 10.55.4.0 netmask 255.255.252.0 gw 10.55.0.2
+
+```
+
+#### Heiter
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.55.0.1
 ```
 
 
